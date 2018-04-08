@@ -1,0 +1,13 @@
+.todolist {
+  margin: 15px auto;
+  padding: 0;
+  list-style: none; }
+  .todolist li {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background: #F1F1F1;
+    margin-top: 5px;
+    cursor: pointer;
+    -webkit-transition: background 0.2s; }
+    .todolist li:hover {
+      background: #CCC; }

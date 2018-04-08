@@ -1,0 +1,42 @@
+{
+  "name": "create-react-app-mern",
+  "description": "JavaScript project boilerplate with MongoDB, ExpressJS, Create React App, and NodeJS.",
+  "version": "1.0.0",
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "mongoose": "^5.0.13",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "dev": "npm-run-all -p watch-css start-js",
+    "start": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn dev\"",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "server": "nodemon server/server.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sahibjotsaggu/create-react-app-mern.git"
+  },
+  "author": "Sahibjot Saggu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahibjotsaggu/create-react-app-mern/issues"
+  },
+  "homepage": "https://github.com/sahibjotsaggu/create-react-app-mern"
+}

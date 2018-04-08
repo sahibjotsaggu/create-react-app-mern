@@ -1,0 +1,18 @@
+main {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 576px) {
+    main {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    main {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    main {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    main {
+      max-width: 1140px; } }

@@ -1,0 +1,9 @@
+header {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 75px 0px;
+  background: #222; }
+  header h1 {
+    text-align: center;
+    color: #FFF; }
