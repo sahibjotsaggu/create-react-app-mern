@@ -12,6 +12,8 @@ This repository is a boilerplate application for using Create React App frontend
 Tested on:
 
 NodeJS: 7.10.0
+
 MongoDB: 3.0.5
+
 NPM: 4.2.0
 
